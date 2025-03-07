@@ -26,6 +26,17 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+
+  public static void testMirrorArms(){
+    Picture snowman = new Picture("snowman.jpg");
+    snowman.mirrorArms();
+    snowman.explore();
+  }
+  public static void testMirrorGull(){
+    Picture seagull = new Picture("seagull.jpg");
+    seagull.mirrorGull();
+    seagull.explore();
+  }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
@@ -56,10 +67,11 @@ public class PictureTester
     * method in Java */
   public static void main(String[] args)
   {
+    //testMirrorGull();
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -71,7 +83,7 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
